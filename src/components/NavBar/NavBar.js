@@ -1,5 +1,6 @@
 import { Component } from "react";
 import carrito from './img/carrito.jpg'
+import { Link } from "react-router-dom";
 
 class NavBar extends Component{
     render(){
@@ -7,10 +8,10 @@ class NavBar extends Component{
             <div className="NavBar">
                 <h1 className="titulo">Tienda D'Amico</h1>
                 <ul>
-                    <li ><a href="default.asp">Inicio</a></li>
-                    <li ><a href="news.asp">Vehiculos</a></li>
-                    <li ><a href="contact.asp">Motor</a></li>
-                    <li ><a href="about.asp">Carroceria</a></li>
+                    <li > <Link to="/category/Vehiculos">Vehiculos</Link></li>
+                    <li > <Link to="/category/Volkswagen">Volkswagen</Link></li>
+                    <li > <Link to="/category/Chevrolet">Chevrolet</Link></li>
+                    <li > <Link to="/category/Audi">Audi</Link></li>
                 </ul>
                 <div>
                     <a href=""><img className="imagen" src={carrito}/></a>
